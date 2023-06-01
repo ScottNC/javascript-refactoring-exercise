@@ -18,7 +18,7 @@ const processTransactions = (transActions) => {
 }
 
 const sortByAmountThenName = (txCount) => {
-    let sortedKeys = Object.keys(txCount).sort((itemOne, itemTwo) => {
+    const sortedKeys = Object.keys(txCount).sort((itemOne, itemTwo) => {
         return txCount[itemTwo] - txCount[itemOne] || itemOne.localeCompare(itemTwo);
     });
 
